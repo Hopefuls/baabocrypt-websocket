@@ -13,7 +13,7 @@ def index():
 
 @socketio.on('connect')
 def handle_connect():
-    emit('message', 'Mit Baabocrypt-Server verbunden')
+    emit('message', 'Connected with Baabocrypt-Server')
 
 @socketio.on('disconnect')
 def handle_disconnect():
